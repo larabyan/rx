@@ -82,10 +82,49 @@ class _MyHomePageState extends State<MyHomePage> {
     // This trailing comma makes auto-formatting nicer for build methods.
           child:new Column(
              mainAxisSize: MainAxisSize.max,
-
+mainAxisAlignment:MainAxisAlignment.spaceAround,
             //verticalDirection:VerticalDirection.down,
             children: <Widget>[
-
+              new Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment:MainAxisAlignment.center,
+              ),
+              new Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment:MainAxisAlignment.center,
+              ),
+              new Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment:MainAxisAlignment.center,
+              ),
+              new Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment:MainAxisAlignment.center,
+              ),
+              new Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment:MainAxisAlignment.center,
+              ),
+              new Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment:MainAxisAlignment.center,
+              ),
+              new Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment:MainAxisAlignment.center,
+              ),
+              new Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment:MainAxisAlignment.center,
+              ),
+              new Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment:MainAxisAlignment.center,
+              ),
+              new Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment:MainAxisAlignment.center,
+                 ),
               new Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment:MainAxisAlignment.center,
@@ -94,15 +133,22 @@ class _MyHomePageState extends State<MyHomePage> {
                // verticalDirection:VerticalDirection.up,
                 // crossAxisAlignment:CrossAxisAlignment.end,
                 children: <Widget>[
-                  new RaisedButton(
-                child: const Text('Connect with Twitter'),
-                color: Color.fromARGB(1, 255, 200, 100),
-                elevation: 4.0,
-                splashColor: Colors.amberAccent,
-                onPressed: () {
-                  // Perform some action
-                },
-              ),
+                  new SizedBox(
+                    width: 312.0,
+                    height: 39.0,
+                    child:new RaisedButton(
+
+                      //child: new Text('Create Classic Account', style: new TextStyle(color: Colors.white)),
+                      // padding: new EdgeInsets.all(8.0),
+                      color: Color.fromARGB(1, 15, 56, 112),
+                        elevation: 0.0,
+                      splashColor: Color.fromARGB(-1, 255, 97, 0),
+                      onPressed: () {
+                        // Perform some action
+                      },
+                    ),
+                  )
+
 
 
                 ], ),
@@ -114,15 +160,19 @@ class _MyHomePageState extends State<MyHomePage> {
                 // verticalDirection:VerticalDirection.up,
                 // crossAxisAlignment:CrossAxisAlignment.end,
                 children: <Widget>[
-                  new RaisedButton(
-                    child: const Text('Connect with Twitter'),
-                    color: Color.fromARGB(1, 255, 200, 100),
-                    elevation: 4.0,
-                    splashColor: Colors.amberAccent,
-                    onPressed: () {
-                      // Perform some action
-                    },
-                  ),
+                 new SizedBox(
+                   width: 312.0,
+                   height: 44.0,
+                   child:  new RaisedButton(
+                     //child: new Text('Create Anncount With Med.Insurance', style: new TextStyle(color: Colors.white)  ),
+                     color: Color.fromARGB(1, 255, 97, 0),
+                     elevation: 0.0,
+                     splashColor: Color.fromARGB(-1, 15, 56, 112),
+                     onPressed: () {
+                       // Perform some action
+                     },
+                   ),
+                 )
 
 
                 ], ),
@@ -133,19 +183,31 @@ class _MyHomePageState extends State<MyHomePage> {
                 //mainAxisAlignment:MainAxisAlignment.spaceBetween,
                 // verticalDirection:VerticalDirection.up,
                 // crossAxisAlignment:CrossAxisAlignment.end,
-                children: <Widget>[
-                  new RaisedButton(
-                    child: const Text('Connect with Twitter'),
-                    color: Theme.of(context).accentColor,
-                    elevation: 4.0,
-                    splashColor: Colors.amberAccent,
+                children: <Widget>[ new SizedBox(
+                  width: 312.0,
+                  height: 42.0,
+                  child:new RaisedButton(
+                   // child: new Text('SIGN IN', style: new TextStyle(color:Color.fromARGB(-1, 255, 97, 0) ),),
+                    // padding: new EdgeInsets.all(1.0),
+                    color: Color.fromARGB(1, 255, 255, 255),
+                   //shape: ShapeBorder.  ,
+                    elevation: 0.0,
+                    splashColor: Color.fromARGB(-1, 15, 56, 112),
                     onPressed: () {
                       // Perform some action
                     },
                   ),
+                )
 
 
-                ], )
+
+                ], ),
+              new Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment:MainAxisAlignment.center,
+              ),
+
+
 
 
             ],)

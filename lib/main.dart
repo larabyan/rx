@@ -1,5 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:rx/signUpWithMedInsurance.dart';
+import 'package:RxHealth/signUpWithMedInsurance.dart';
+import 'package:RxHealth/signUpFree.dart';
+import 'package:RxHealth/signInMed.dart';
+import 'package:RxHealth/signInClassic.dart';
 
 void main() => runApp(new MyApp());
 
@@ -8,19 +11,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return new MaterialApp(
-      title: 'Flutter Demo',
+      title: 'RxHealth',
       theme: new ThemeData(
-        // This is the theme of your application.
-        //
-        // Try running your application with "flutter run". You'll see the
-        // application has a blue toolbar. Then, without quitting the app, try
-        // changing the primarySwatch below to Colors.green and then invoke
-        // "hot reload" (press "r" in the console where you ran "flutter run",
-        // or press Run > Flutter Hot Reload in IntelliJ). Notice that the
-        // counter didn't reset back to zero; the application is not restarted.
-       // primarySwatch: Colors.blue,
+
       ),
-      home: new MyHomePage(title: 'Flutter Demo Home Page'),
+      home: new MyHomePage(title: 'RxHealth'),
     );
   }
 }
@@ -78,26 +73,10 @@ class _MyHomePageState extends State<MyHomePage> {
 mainAxisAlignment:MainAxisAlignment.spaceAround,
             //verticalDirection:VerticalDirection.down,
             children: <Widget>[
-              new Row(
-                mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment:MainAxisAlignment.center,
-              ),
-              new Row(
-                mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment:MainAxisAlignment.center,
-              ),
-              new Row(
-                mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment:MainAxisAlignment.center,
-              ),
-              new Row(
-                mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment:MainAxisAlignment.center,
-              ),
-              new Row(
-                mainAxisSize: MainAxisSize.max,
-                mainAxisAlignment:MainAxisAlignment.center,
-              ),
+
+
+
+
               new Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment:MainAxisAlignment.center,
@@ -121,28 +100,43 @@ mainAxisAlignment:MainAxisAlignment.spaceAround,
               new Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment:MainAxisAlignment.center,
+              ),
+              new Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment:MainAxisAlignment.center,
+              ),
+              new Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment:MainAxisAlignment.center,
+
+              ),
+              new Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment:MainAxisAlignment.center,
 
                // verticalDirection:VerticalDirection.down,
                // verticalDirection:VerticalDirection.up,
                 // crossAxisAlignment:CrossAxisAlignment.end,
                 children: <Widget>[
-                  new SizedBox(
-                    width: 312.0,
-                    height: 50.0,
-                    child:new RaisedButton(
-
-                      //child: new Text('Create Classic Account', style: new TextStyle(color: Colors.white)),
-                      // padding: new EdgeInsets.all(8.0),
-                      color: Color.fromARGB(1, 15, 56, 112),
-                      highlightElevation:0.0 ,
-                      elevation: 0.0,
-                    //  splashColor: Color.fromARGB(-1, 255, 97, 0),
-                      onPressed: () {
-                        // Perform some action
-                      },
-                    ),
-                  )
-
+//                  new SizedBox(
+//                    width: 312.0,
+//                    height: 50.0,
+//                    child:new RaisedButton(
+//
+//                      //child: new Text('Create Classic Account', style: new TextStyle(color: Colors.white)),
+//                      // padding: new EdgeInsets.all(8.0),
+//                      color: Color.fromARGB(1, 15, 56, 112),
+//                      highlightElevation:0.0 ,
+//                      elevation: 0.0,
+//                    //  splashColor: Color.fromARGB(-1, 255, 97, 0),
+//                      onPressed: () {Navigator.push(
+//                        context,
+//                        MaterialPageRoute(builder: (context) => SignUpFree()),
+//                      );
+//                        // Perform some action
+//                      },
+//                    ),
+//                  )
 
 
                 ], ),
@@ -160,12 +154,12 @@ mainAxisAlignment:MainAxisAlignment.spaceAround,
                    child:  new RaisedButton(
                      //child: new Text('Create Anncount With Med.Insurance', style: new TextStyle(color: Colors.white)  ),
                      color: Color.fromARGB(1, 255, 97, 0),
-                      highlightElevation:0.0 ,
+                     highlightElevation:0.0 ,
                      elevation: 0.0,
-                    // splashColor: Color.fromARGB(-1, 15, 56, 112),
+                     // splashColor: Color.fromARGB(-1, 15, 56, 112),
                      onPressed: () { Navigator.push(
                        context,
-                       MaterialPageRoute(builder: (context) => SecondScreen()),
+                       MaterialPageRoute(builder: (context) => SignUpFree()),
                      );
                        // Perform some action
                      },
@@ -190,22 +184,78 @@ mainAxisAlignment:MainAxisAlignment.spaceAround,
                     color: Color.fromARGB(1, 255, 255, 255),
                    //shape: ShapeBorder.  ,
                     elevation: 0.0,
-                    //splashColor: Color.fromARGB(-1, 15, 56, 112),
-                    onPressed: () {
+                    splashColor: Color.fromARGB(-1, 15, 56, 112),
+                    onPressed: () {  Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => SignUpMed()),
+                    );
                       // Perform some action
                     },
                   ),
                 )
 
-
-
                 ], ),
               new Row(
                 mainAxisSize: MainAxisSize.max,
                 mainAxisAlignment:MainAxisAlignment.center,
+                // verticalDirection:VerticalDirection.down,
+                //mainAxisAlignment:MainAxisAlignment.spaceBetween,
+                // verticalDirection:VerticalDirection.up,
+                // crossAxisAlignment:CrossAxisAlignment.end,
+                children: <Widget>[ new SizedBox(
+                  width: 312.0,
+                  height: 42.0,
+                  child:new RaisedButton(
+                    // child: new Text('SIGN IN', style: new TextStyle(color:Color.fromARGB(-1, 255, 97, 0) ),),
+                    // padding: new EdgeInsets.all(1.0),
+                    color: Color.fromARGB(1, 255, 255, 255),
+                    //shape: ShapeBorder.  ,
+                    elevation: 0.0,
+                    splashColor: Color.fromARGB(-1, 15, 56, 112),
+                    onPressed: () {
+                      return  showDialog<bool>(
+                        context: context,
+                        builder: (BuildContext context) {
+                          return new AlertDialog(
+                            content: new Text(
+                                'Please choose your subscribtion',
+
+                            ),
+                            actions: <Widget>[
+                              new FlatButton(
+                                  child: const Text('MED ACCOUNT'),
+                                  onPressed: () {
+                                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => MyCustomForm()),
+                    ); // Pops the confirmation dialog but not the page.
+                                  }
+                              ),
+                              new FlatButton(
+                                  child: const Text('CLASSIC ACCOUNT'),
+                                  onPressed: () {
+                                    Navigator.push(
+                                      context,
+                                      MaterialPageRoute(builder: (context) => SignInClassic()),
+                                    ); // Returning true to _onWillPop will pop again.
+                                  }
+                              )
+                            ],
+                          );
+                        },
+                      );
+//
+                      // Perform some action
+                    },
+                  ),
+                )
+
+                ], ),
+
+              new Row(
+                mainAxisSize: MainAxisSize.max,
+                mainAxisAlignment:MainAxisAlignment.center,
               ),
-
-
 
 
             ],)
@@ -218,3 +268,4 @@ mainAxisAlignment:MainAxisAlignment.spaceAround,
   }
 
 }
+

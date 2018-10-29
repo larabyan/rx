@@ -1,4 +1,4 @@
-name: rx
+name: RxHealth
 description: A new Flutter project.
 
 dependencies:
@@ -32,6 +32,25 @@ flutter:
   assets:
     - assets/signUP.jpg
     - assets/signUpMed.jpg
+    - assets/signUpFree.jpg
+    - assets/signInFree.jpg
+    - assets/signInMed.jpg
+    - assets/menu.jpg
+    - assets/profile.jpg
+    - assets/myBonuses.jpg
+    - assets/partners.jpg
+    - assets/map.jpg
+    - assets/about.jpg
+    - assets/sevices.jpg
+    - assets/inbox.jpg
+    - assets/currentMessage.jpg
+#    - assets/myBonuses.jpg
+#    - assets/partners.jpg
+#    - assets/map.jpg
+#    - assets/about.jpg
+#    - assets/services.jpg
+
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.io/assets-and-images/#resolution-aware.
 
